@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import LeftSideBar from "@/components/shared/LeftSideBar";
-import RightSideBar from "@/components/shared/RightSideBar";
+import RightSideBar from "@/components/shared/RightSideBar"
 import BottomBar from "@/components/shared/BottomBar";
 import TopBar from "@/components/shared/TopBar";
 import { Inter } from "next/font/google";
@@ -25,9 +25,10 @@ export default function RootLayout({
        <ClerkProvider>
               <html lang="en">
       <body className={inter.className}>
-        <TopBar />
+      
+         <TopBar />
 
-        <main>
+        <main className="flex">
           <LeftSideBar />
 
           <section className="main-container">
